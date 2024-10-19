@@ -2,6 +2,7 @@ import React from 'react'
 import Pusk from "../img/icon/Pusk";
 import Start from "../img/icon/Start";
 import Lang from "../img/icon/Lang";
+import Shortcut from "./Shortcut";
 
 const Footer = () => {
     return (
