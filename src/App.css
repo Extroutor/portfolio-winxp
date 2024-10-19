@@ -1,0 +1,53 @@
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    height: 32px;
+    width: 100%;
+    background: #C0C0C0;
+    box-shadow: 2px 2px 0 0 #DFDFDF inset, -2px -2px 0 0 #7F7F7F inset, 1px 1px 0 0 #FFFFFF inset, -1px -1px 0 0 #000000 inset;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start {
+    width: 60px;
+    height: 23px;
+    background-color: #C0C0C0;
+    box-shadow: -2px -2px 0 0 #818181 inset, 1px 1px 0 0 #FFFFFF inset, -1px -1px 0 0 #000000 inset;
+    cursor: default;
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+}
+
+
+.footer_time {
+    width: 95px;
+    box-shadow: 1px 1px 0 0 #808080 inset, -1px -1px 0 0 #FFFFFF inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px;
+}
+
+.footer_time_text {
+    font-size: 11px;
+}
