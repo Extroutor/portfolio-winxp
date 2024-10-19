@@ -1,9 +1,9 @@
 import React from 'react'
 import FolderIcon from "../img/icon/FolderIcon"
 
-const Folder = ({label}: {label: string}) => {
+const Folder = ({label, onClickHandler}: {label: string, onClickHandler?: () => void}) => {
     return (
-        <div className='shortcut'>
+        <div className='shortcut' onDoubleClick={onClickHandler}>
             <FolderIcon/>
             <div className='shortcut_label'>{label}</div>
         </div>

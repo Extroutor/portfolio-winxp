@@ -6,16 +6,21 @@ import Address from "./Address"
 import Content from "./Content"
 import Footer from "./Footer"
 
-const Modal = () => {
+const Modal = ({isOpenModal, onCloseModalHandler}: { isOpenModal: boolean, onCloseModalHandler: any }) => {
     return (
-        <div className='modal'>
-            <TitleBar/>
-            <Menu/>
-            <Divider/>
-            <Address/>
-            <Content/>
-            <Footer/>
-        </div>
+        <>
+            {isOpenModal &&
+                <div className='modal'>
+                    <TitleBar onCloseModalHandler={onCloseModalHandler}/>
+                    <Menu/>
+                    <Divider/>
+                    <Address/>
+                    <Content/>
+                    <Footer/>
+                </div>
+            }
+        </>
+
     )
 }
 
