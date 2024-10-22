@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 import Footer from "./components/Footer"
-import Desctop from "./components/Desctop"
+import Desktop from "./components/Desktop"
 
 function App() {
     return (
         <div className="App">
-            <Desctop/>
+            <Desktop/>
             <Footer/>
         </div>
     )

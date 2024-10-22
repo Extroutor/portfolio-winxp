@@ -1,9 +1,9 @@
-import React, {ReactElement} from 'react'
+import React from 'react'
 
-const Shortcut = ({icon, label}: {icon: ReactElement, label: string}) => {
+const Shortcut = ({icon, label}: {icon: any, label: string}) => {
     return (
         <div className='shortcut'>
-            {icon}
+            <img src={icon} alt={label}/>
             <div className='shortcut_label'>{label}</div>
         </div>
     )

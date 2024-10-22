@@ -5,13 +5,15 @@ import Divider from "./Divider"
 import Address from "./Address"
 import Content from "./Content"
 import Footer from "./Footer"
+import {useSelector} from "react-redux";
 
-const Modal = ({isOpenModal, onCloseModalHandler}: { isOpenModal: boolean, onCloseModalHandler: any }) => {
+const Modal = () => {
+    const mainModal = useSelector((state: any) => state.ui.mainModal)
     return (
         <>
-            {isOpenModal &&
+            {mainModal &&
                 <div className='modal'>
-                    <TitleBar onCloseModalHandler={onCloseModalHandler}/>
+                    <TitleBar/>
                     <Menu/>
                     <Divider/>
                     <Address/>
@@ -20,7 +22,6 @@ const Modal = ({isOpenModal, onCloseModalHandler}: { isOpenModal: boolean, onClo
                 </div>
             }
         </>
-
     )
 }
 

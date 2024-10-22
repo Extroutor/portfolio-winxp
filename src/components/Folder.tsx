@@ -1,10 +1,14 @@
 import React from 'react'
-import FolderIcon from "../img/icon/FolderIcon"
+import {openMainModal} from "../store/reducer";
+import {useDispatch} from "react-redux";
 
-const Folder = ({label, onClickHandler}: {label: string, onClickHandler?: () => void}) => {
+const Folder = ({label}: {label: string}) => {
+    const dispatch = useDispatch()
+    const onFolderOpen = () => dispatch(openMainModal(true))
+
     return (
-        <div className='shortcut' onDoubleClick={onClickHandler}>
-            <FolderIcon/>
+        <div className='shortcut' onDoubleClick={onFolderOpen}>
+            <img src={require('./../img/icon/folder.png')} alt={label}/>
             <div className='shortcut_label'>{label}</div>
         </div>
     )
